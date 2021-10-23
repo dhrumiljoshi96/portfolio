@@ -36,9 +36,9 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#download-cv" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	         <!-- <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li> -->
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
 	          <li class="nav-item"><a href="#interests-section" class="nav-link"><span>Interests</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
@@ -93,6 +93,14 @@
 					healthcare domain. The problems being worked on in healthcare are very challenging and gave me a good exposure to real world data science applications. </p>
 
 					<p>Apart from aspiring to be a top notch data scientist I enjoy theatre, music and art and hope to someday walk the stage again and get involved in performing arts.</p>
+		     <!--       <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Dhrumil Joshi</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>March 29, 1997</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>New York, NY</span></li>
+		            	<li class="d-flex"><span>Zip code:</span> <span>1000</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>msk2245@columbia.edu</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+1-908-693-3290</span></li>
+		            </ul> -->
 		          </div>
 		        </div>
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
@@ -101,7 +109,7 @@
 	                <span class="number" data-number="20">0</span>
 	                <span>Project complete</span>
                 </p>
-                <p><a id = "download-cv" href="SDEII_Dhrumil_Resume.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p><a href="SDEII_Dhrumil_Resume.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
               </div>
 	          </div>
 	        </div>
@@ -502,11 +510,31 @@
     			<div class="col-md-3">
 				    <nav id="navi">
 					    <ul>
-					      <li><a href="#page-1p">Projects</a></li>
+					      <li><a href="#page-1p">Publication</a></li>
+					      <li><a href="#page-2p">Projects</a></li>
 					    </ul>
 					  </nav>
 					</div>
+					<div class="col-md-9">
 					  <div id="page-1p" class= "page one">
+					  	<h2 class="heading">Publication</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2017</span>
+		    					<h2>Emotion based music player for Android</h2>
+		    					<span class="position">College of Engineering, Guindy</span>
+		    					<p>Imparted a machine learning approach to perform facial emotion analysis and digital signal processing on audio signals. Categorized songs into various emotions by extracting midterm features to compute their valence and arousal values.
+		    					Applied regression through Support Vector Machines was used to train the model on these audio features and a Valence-Arousal coordinate plane was defined to segregate the emotions.
+								</p>
+								<a href="https://ieeexplore.ieee.org/abstract/document/8388671" >Publication Link
+								</a>
+		    				</div>
+		    			</div>
+		    		  </div>
+					  <div id="page-2p" class= "page two">
 					  	<h2 class="heading">Projects</h2>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
@@ -601,110 +629,6 @@
 		</div>
     </section>
 
-	<section class="ftco-section ftco-no-pb goto-here" id="certifications-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-2p">Certifications</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div id="page-1p" class= "page two">
-					<h2 class="heading">Certifications</h2>
-					<div class="resume-wrap d-flex ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="flaticon-ideas"></span>
-						</div>
-						<div class="text pl-3">
-							<span class="date">Jan - May '19</span>
-							<h2>News Data Analytics</h2>
-							<span class="position">Microsoft Research</span>
-							<p>Created a platform to analyze news articles and events. Topic matching of the news articles with Wikipedia pages.
-								Implemented Wikipedia category search tree to obtain categorization of articles.</p>
-							<a href= "https://github.com/thisismeg/newsCapstone"> Github Repo
-							</a>
-						</div>
-					</div>
-					<div class="resume-wrap d-flex ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="flaticon-ideas"></span>
-						</div>
-						<div class="text pl-3">
-							<span class="date">Sep-Dec '19</span>
-							<h2>Detecting Cancer Metastases in gigapixel pathology images</h2>
-							<span class="position">Applied Deep Learning, Columbia University</span>
-							<p> Detected tumor cells from pathology images using image segmentation and classification. Constructed a convolutional neural network model using tensorflow and keras frameworks.
-								Designed evaluation metrics to diagnose the presence of cancer in the cells.
-							</p>
-							<a href= "https://github.com/thisismeg/Applied-Deep-Learning--final-project"> Github Repo
-							</a>
-						</div>
-					</div>
-					<div class="resume-wrap d-flex ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="flaticon-ideas"></span>
-						</div>
-						<div class="text pl-3">
-							<span class="date">Oct-Dec '19</span>
-							<h2>Recommendation system on yelp dataset</h2>
-							<span class="position">Personalization Theory, Columbia University</span>
-							<p>Built production grade recommendation systems on the yelp dataset for various businesses. Predicted ratings on active users using collaborative filtering, non-negative matrix factorization.
-								Designed a ‘wide and deep’ learning model for user recommendation.
-							</p>
-							<a href="https://github.com/thisismeg/personalization-final-project" > Github Repo
-							</a>
-						</div>
-					</div>
-					<div class="resume-wrap d-flex ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="flaticon-ideas"></span>
-						</div>
-						<div class="text pl-3">
-							<span class="date">Sep-Oct '19</span>
-							<h2>Movie recommender system</h2>
-							<span class="position">Personalization theory, Columbia University</span>
-							<p>Built production grade recommendation systems on the movie lens dataset. Designed user-based collaborative filtering and model-based matrix factorization using PySpark ML methods
-								Predicted users top 10 movie recommendations and developed evaluation metrics for the recommender model.
-							</p>
-							<a href="https://github.com/thisismeg/personalization-project1" > Github Repo
-							</a>
-						</div>
-					</div>
-					<div class="resume-wrap d-flex ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="flaticon-ideas"></span>
-						</div>
-						<div class="text pl-3">
-							<span class="date">Sep-Dec '18</span>
-							<h2>The global refugee crisis</h2>
-							<span class="position">Exploratory data analysis and visualization, Columbia University</span>
-							<p>Identified the humanitarian crisis using UNHCR population of concerns data. Explored the datasets to obtain the countries with highest refugee population using R tidyverse.
-								Visualized the flow of refugees across the years using D3.js
-							</p>
-							<a href= "https://github.com/thisismeg/edavfp-refugees" >Github Repo
-							</a>
-						</div>
-					</div>
-					<div class="resume-wrap d-flex ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="flaticon-ideas"></span>
-						</div>
-						<div class="text pl-3">
-							<span class="date">Jun-Dec '17</span>
-							<h2>Context based hashtag recommendation system</h2>
-							<span class="position">Software development lab, College of Engineering Guindy</span>
-							<p> Performed topic modelling on twitter posts using Latent Dirichlet Allocation.
-								Evaluated the results using topic coherence to generate most relevant hashtags. Further analysis on subtweets was performed to obtain better granularity of results.
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section>
 
     <section class="ftco-section" id="interests-section">
       <div class="container">
