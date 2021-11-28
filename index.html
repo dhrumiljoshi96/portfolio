@@ -58,7 +58,7 @@
 								     class="txt-rotate"
 								     data-period="2000"
 								     data-rotate='[ "Software Engineer","Problem Solver",
-								     "Self Starter",  "Sportsman", "Cricketer" ]'></span>
+								     "Self Starter",  "Sportsman", "Data Science Enthusiast" ]'></span>
 								</h2>
 							</div>
             </div>
@@ -658,14 +658,35 @@
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Interests</h1>
-            <h2 class="mb-4">My Interests</h2>
-            <p>Things that interest me that are NOT in the computer science space!</p>
+            <h2 class="mb-4">Extra Curricular</h2>
+<!--            <p>Things that interest me that are NOT in the computer science space!</p>-->
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <div class="block-20" style="background-image: url('images/interest-1.jpg');">
+<!--              <div class="block-20" style="background-image: url('images/interest-1.jpg');">-->
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img src="images/interest-1.jpg" style="width:100%">
+						<div class="text">Caption Text</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img src="images/interest-1.jpg" style="width:100%">
+						<div class="text">Caption Two</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<img src="images/interest-1.jpg" style="width:100%">
+						<div class="text">Caption Three</div>
+					</div>
+
+				</div>
               </div>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">Extra Curricular</h3>
@@ -724,23 +745,23 @@
               </div>
             </div>
           </div>
-<!--          <div class="col-md-4 d-flex ftco-animate">-->
-<!--          	<div class="blog-entry">-->
-<!--              <div class="block-20" style="background-image: url('images/interest-3.jpg');">-->
-<!--              </div>-->
-<!--              <div class="text mt-3 float-right d-block">-->
-<!--                <h3 class="heading">Hobbies</h3>-->
-<!--                <div class="d-flex align-items-center mb-3 meta">-->
-<!--	            &lt;!&ndash;    <p class="mb-0">-->
-<!--	                	<span class="mr-2">Sept. 12, 2019</span>-->
-<!--	                	<a href="#" class="mr-2">Admin</a>-->
-<!--	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>-->
-<!--	                </p> &ndash;&gt;-->
-<!--                </div>-->
-<!--                <p>I am a trinity level 6 pianist and I enjoy playing some of my favorite songs in my free time. I also like to work on some DIY arts & crafts projects for room decor or to-->
-<!--                gift to my friends as presents. When I am trying to have a lazy day I love to binge watch youtube videos of some of the lifestyle vloggers I follow and occasionally I like to shoot some vlogs myself</p>-->
-<!--              </div>-->
-<!--            </div>-->
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <div class="block-20" style="background-image: url('images/interest-3.jpg');">
+              </div>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Hobbies</h3>
+                <div class="d-flex align-items-center mb-3 meta">
+	            <!--    <p class="mb-0">
+	                	<span class="mr-2">Sept. 12, 2019</span>
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p> -->
+                </div>
+                <p>I am a trinity level 6 pianist and I enjoy playing some of my favorite songs in my free time. I also like to work on some DIY arts & crafts projects for room decor or to
+                gift to my friends as presents. When I am trying to have a lazy day I love to binge watch youtube videos of some of the lifestyle vloggers I follow and occasionally I like to shoot some vlogs myself</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -820,6 +841,27 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
